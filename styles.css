@@ -1,0 +1,279 @@
+/* General Styles */
+  @font-face {
+    font-family: 'Arial Narrow'; /* Choose a name for your font */
+    src: url('fonts/arialnarrow.ttf') format('ttf'),
+         url('fonts/arialnarrow_bold.ttf') format('tff'),
+         url('fonts/arialnarrow_bolditalic.ttf') format('tff'),
+         url('fonts/arialnarrow_italic.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ .instrument-serif-regular {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .instrument-serif-regular-italic {
+    font-family: "Instrument Serif", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+  }
+
+  body {
+    font-family: "Arial Narrow", serif;
+    color: #333;
+    font-size: larger;
+    background-color: #fff;
+
+    /* Flexbox Centering */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px; /* Space between items */
+
+    /* Full viewport height */
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 20px; /* Remove default body margin */
+}
+
+main {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  text-align: center;
+}
+
+  h1 {
+    font-family: "Instrument Serif", serif;
+    margin: none;
+    margin-block: none;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+  }
+
+  h2, h3 {
+    font-family: "Arial Narrow", serif;
+    color: #A400A1;
+    font-weight: 400;
+    margin: none;
+    margin-block: none;
+  }
+
+  p {
+    font-family: "Arial Narrow", serif;
+    color: #333;
+    font-weight: 400;
+    text-align: left;
+    margin: none;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding: 10px;
+    margin: 12px;
+  }
+
+  nav a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #333;
+    align-items: start;
+    padding-right: 6px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: #A400A1;
+  }
+
+  .nav-about {
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  .banner {
+    height: 200px;
+    background: url('/assets/header_img.png') no-repeat center center/cover;
+  }
+
+/* Shared Container Styles */
+.section-container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Profile Section */
+#profile {
+  display: flex;
+  align-items: stretch; 
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.profile-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  gap: 12px; 
+  text-align: left; 
+}
+
+/* Skills Section */
+#skills {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.skills-group {
+  flex: 1 1 calc(33.333% - 16px); 
+  max-width: 300px;
+  box-sizing: border-box; 
+  margin: 0 auto; 
+}
+
+.image-grid {
+  display: grid;
+  justify-content: space-between;
+
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 16px; /* Space between images */
+  width: 100%; /* Adjust grid width */
+  max-width: 1200px; /* Maximum width of the grid */
+}
+
+.image-item img {
+  width: 100%; /* Ensure images take full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fill the container */
+  border-radius: 4px; /* Optional: Rounded corners for images */
+}
+
+/* Footer Section */
+
+footer {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* About Page */
+
+.about-img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 16px; /* Space between items */
+  width: 100%; /* Optional: Set grid width */
+}
+
+/* Work Page */
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Space out the cards */
+  gap: 20px; /* Optional: space between the cards */
+  flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+}
+
+.card {
+  flex: 1 1 30%; /* Makes each card take up 30% of the row */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Horizontally center the content */
+  justify-content: center; /* Vertically center the content */
+  text-align: center; /* Center the text inside */
+}
+
+.card h3, .card p {
+  margin: 0; /* Optional: remove default margin for consistent spacing */
+}
+
+/* Projects Page */
+
+#projects {
+  padding: 40px 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack projects vertically */
+  gap: 30px; /* Space between projects */
+  align-items: center; /* Center the content */
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Adjust the width of the project card */
+  max-width: 500px; /* Max width for larger screens */
+}
+
+.project-card h1 {
+  margin-bottom: 15px;
+}
+
+.project-card video {
+  width: 100%; /* Make video take full width of the container */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners for the video */
+}
+
+.project-card img {
+  width: 100%; /* Make image take full width of the container */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.project-card p {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #333;
+}

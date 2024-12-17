@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tanisha naik portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="banner"></div>
+    <section id="profile" class="section-container">
+
+      <div class="profile-image">
+        <img src="/assets/tanisha.jpeg" alt="Profile Image">
+      </div>
+
+      <div class="profile-content">
+        <div class="profile-header">
+          <h1>Tanisha Naik</h1>
+          <h3>Currently @ AiFA Labs & Titan Radio</h3>
+        </div>
+
+        <p>
+          Senior computer science student @ CSU Fullerton, passionate & driven student looking forward to pursuing a career in Product Design. Dedicated to creating designs that are not only visually appealing but focus on user-centered design and accessibility.
+        </p>
+        <nav>
+          <h3>☟ Click to see more... </h3>
+          <a href="/about.html">About</a>
+          <a href="/work.html">Work</a>
+          <a href="/projects.html">Projects</a>
+          <br>
+          <a href="assets/TanishaNaikResume2024.pdf" download>Resume</a>
+          <a href="https://www.linkedin.com/in/tanishanaik/">Linkedin</a>
+          <a href="mailto:tanishapnaik@gmail.com"> Email </a>
+        </nav>
+      </div>
+
+    </section>
+  </header>
+
+  <section id="skills" class="section-container">
+    <div class="skills-wrapper">
+      <div class="skills-header">
+      <h1>Skills</h1>
+      <h3>Technologies, Skillsets & Hobbies Acquired</h3>
+      </div>
+    <div class="skills-container">
+      <div class="skills-group">
+        <h1>Technologies</h1>
+        <ul>
+          <li>Adobe Creative Cloud</li>
+          <li>Figma</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div class="skills-group">
+        <h1>Skillsets</h1>
+        <ul>
+          <li>User Experience Design</li>
+          <li>Graphic Design</li>
+          <li>Video Editing</li>
+          <li>Front-End Web Development</li>
+          <li>Digital Content & Marketing</li>
+        </ul>
+      </div>
+      <div class="skills-group">
+        <h1>Hobbies</h1>
+        <ul>
+          <li>Rock Climbing</li>
+          <li>Origami</li>
+          <li>Pokémon Card Collecting</li>
+          <li>Swimming</li>
+          <li>Going to the Beach</li>
+          <li>Photography</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h1>Current Works</h1>
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="assets/beach.jpeg" alt="Image 1">
+    </div>
+    <div class="image-item">
+      <img src="assets/ocean.jpeg" alt="Image 2">
+    </div>
+    <div class="image-item">
+      <img src="assets/tree.jpeg" alt="Image 3">
+    </div>
+  </div>
+
+
+  </section>
+
+  <!-- Footer -->
+
+</body>
+</html>

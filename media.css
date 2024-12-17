@@ -1,0 +1,73 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    #profile {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center-align items */
+      text-align: center;
+      gap: 16px; /* Adjust gap for smaller screens */
+    }
+  
+    .profile-image,
+    .profile-content {
+      flex: none; /* Allow divs to resize naturally */
+      width: 100%; /* Take full width */
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .profile-image img {
+      max-width: 80%; /* Increase image size on smaller screens */
+    }
+  
+    .profile-content {
+      text-align: center; /* Center text for smaller screens */
+      justify-content: center;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column; /* Stack skill groups vertically */
+      gap: 12px; /* Adjust spacing */
+    }
+  
+    .skills-group {
+      flex: 1 1 100%; /* Take full width */
+      max-width: none; /* Remove width limit */
+      text-align: center; /* Center align text for smaller screens */
+    }
+  
+    .skills-header {
+      align-items: center; /* Center-align header text */
+      text-align: center; /* Center text for smaller screens */
+      margin-left: 0; /* Remove left margin */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .currently-listening iframe {
+      height: 300px; /* Reduce height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .currently-listening iframe {
+      height: 200px; /* Further reduce height for very small screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+      text-align: center;
+    }
+  }
+
